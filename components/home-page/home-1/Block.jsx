@@ -11,10 +11,9 @@ const Block = () => {
         </div>
         <div className="col-md-7 col-sm-8 wow fadeInDown">
           <div className="block-wrapper block-one">
-            <h3 style={{ color: "#FFAE10" }}>10 mil+</h3>
+            <h3 style={{ color: "#04E63D" }}>10 mil+</h3>
             <p>Associados que confiam em nosso trabalho.</p>
           </div>
-          {/* /.block-wrapper */}
         </div>
       </div>
       {/* End .row */}
@@ -22,7 +21,7 @@ const Block = () => {
       <div className="row gx-xxl-5" data-aos="fade-down">
         <div className="col-sm-7 wow fadeInDown">
           <div className="block-wrapper block-two position-relative mt-50 sm-mt-30">
-            <h3 style={{ color: "#9650EF" }}>
+            <h3 style={{ color: "#050A30" }}>
               5.000+
             </h3>
             <p>Veículos protegidos na base.</p>
@@ -36,7 +35,7 @@ const Block = () => {
 
         <div className="col-sm-5 wow fadeInUp">
           <div className="block-wrapper block-three mt-50 sm-mt-30">
-            <h3 style={{ color: "#00BDE6" }}>
+            <h3 style={{ color: "#464646" }}>
               <span>Benefícios</span>
             </h3>
             <p>Os melhores benefícios do mercado.</p>
