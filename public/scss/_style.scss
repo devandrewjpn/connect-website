@@ -9,6 +9,8 @@
   border-radius: 0;
 }
 :root {
+  --primary: #04E63D;
+  --secondary: #050A30;
   --text-color: #48494e;
   --heading: #050A30;
   --prime-one: #ff8c24;
@@ -21,6 +23,7 @@
   --prime-eight: #ffed4e;
   --prime-nine: #04E63D;
   --prime-ten: #04E63D;
+  ;
   --prime-eleven: #ffce4c;
   --prime-twelve: #ffe500;
 }
@@ -4953,6 +4956,7 @@ body .btn-twentyFive:hover {
   font-size: 26px;
 }
 .form-style-two .input-group-meta input,
+.form-style-two .input-group-meta select,
 .form-style-two .input-group-meta textarea {
   width: 100%;
   max-width: 100%;
@@ -4962,6 +4966,10 @@ body .btn-twentyFive:hover {
   font-size: 15px;
 }
 .form-style-two .input-group-meta input {
+  height: 60px;
+  padding: 0 20px;
+}
+.form-style-two .input-group-meta select {
   height: 60px;
   padding: 0 20px;
 }
@@ -6848,10 +6856,11 @@ body .btn-twentyFive:hover {
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Feature Section Thirty Six ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .card-style-sixteen {
-  padding: 75px 15px 90px;
+  padding: 75px 15px 55px;
   border: 1px solid #e9e9e9;
   border-radius: 10px;
   overflow: hidden;
+  min-height: 500px;
 }
 .card-style-sixteen:hover {
   border-color: var(--prime-ten);

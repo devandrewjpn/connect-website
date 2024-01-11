@@ -1,19 +1,23 @@
 /** @type {import('next').NextConfig} */
 
 module.exports = {
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
     output: 'export',
-    basePath: '/connect',
+    basePath: '/projetos/connect',
     typescript: {
       ignoreBuildErrors: true,
     },
+    assetPrefix: 'https://agenciabrasildigital.com.br/projetos/connect',
     images: {
       unoptimized: true,
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'devandrew.com.br/',
+          hostname: 'agenciabrasildigital.com.br/',
           port: '',
-          pathname: '/connect/**',
+          pathname: '/projetos/connect/**',
         },
       ],
     }

@@ -1,0 +1,67 @@
+.promo__hero {
+    background: var(--secondary);
+    padding: 4rem 0;
+
+    h1 {
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    p {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+.card_product_list {
+    max-width: 150px;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    a {
+        background: var(--primary);
+        color: var(--secondary);
+        border-radius: 30px;
+
+        padding: 0.5rem 2rem;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+}
+.row__flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.avaliacoes__promo {
+    background: var(--secondary);
+    padding: 4rem 0;
+
+    h2,p,strong {
+        color: #fff;
+    }
+}
+.main_hero_button {
+    background: var(--secondary);
+    color: #fff;
+
+    border: 0;
+    border-radius: 30px;
+
+    padding: 1rem 2rem;
+    transition: .6s;
+
+    &:hover {
+        background: var(--primary);
+    }
+}

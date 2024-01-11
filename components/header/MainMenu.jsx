@@ -21,7 +21,7 @@ const MainMenu = () => {
           <li className="d-block d-lg-none">
             <div className="logo">
               <Link href="/" className="d-block">
-                <img src={`${process.env.setted_URL}/images/logo/primary-logo.svg`} alt="" width={150} />
+                <img src={`https://agenciabrasildigital.com.br/projetos/connect/images/logo/primary-logo.svg`} alt="" width={150} />
               </Link>
             </div>
           </li>

@@ -4,7 +4,7 @@ const Block = () => {
       <div className="row align-items-end" data-aos="fade-up">
         <div className="col-md-5 col-sm-4">
           <img
-            src={`${process.env.setted_URL}/images/shape/shape_136.svg`}
+            src={`https://agenciabrasildigital.com.br/projetos/connect/images/shape/shape_136.svg`}
             alt="shape"
             className="lazy-img d-none d-sm-inline-block"
           />
@@ -26,7 +26,7 @@ const Block = () => {
             </h3>
             <p>Veículos protegidos na base.</p>
             <img
-              src={`${process.env.setted_URL}/images/shape/shape_138.svg`}
+              src={`https://agenciabrasildigital.com.br/projetos/connect/images/shape/shape_138.svg`}
               alt="sahpe"
               className="lazy-img shapes shape-one"
             />
@@ -42,7 +42,7 @@ const Block = () => {
           </div>
           {/* /.block-wrapper */}
           <img
-            src={`${process.env.setted_URL}/images/shape/shape_137.svg`}
+            src={`https://agenciabrasildigital.com.br/projetos/connect/images/shape/shape_137.svg`}
             alt="shape"
             className="lazy-img mt-30 ms-auto me-auto d-none d-sm-inline-block"
           />

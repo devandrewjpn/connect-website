@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Seo from "../components/common/Seo";
 import DefaulHeader from "../components/header/DefaulHeader";
-import Image from "next/image";
 
 const Pricing = () => {
   return (
@@ -20,20 +19,20 @@ const Pricing = () => {
               </Link>
             </div>
           </div>
-          <Image
+          <img
             width={800}
             height={522}
-            src={`${process.env.setted_URL}/images/assets/ils_06.svg`}
+            src={`https://agenciabrasildigital.com.br/projetos/connect/images/assets/ils_06.svg`}
             alt=""
             className="m-auto"
           />
         </div>
         {/* End .container */}
 
-        <Image
+        <img
           width={1915}
           height={674}
-          src={`${process.env.setted_URL}/images/shape/shape_178.svg`}
+          src={`https://agenciabrasildigital.com.br/projetos/connect/images/shape/shape_178.svg`}
           alt="shape"
           className="shapes shape-one w-100"
         />

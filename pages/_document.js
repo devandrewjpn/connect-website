@@ -13,7 +13,7 @@ export default function Document() {
           content=""
         />
 
-        <link rel="icon" href={`${process.env.setted_URL}/primary-favicon.svg`} />
+        <link rel="icon" href={`https://agenciabrasildigital.com.br/projetos/connect/primary-favicon.svg`} />
       </Head>
       <body>
         <Main />

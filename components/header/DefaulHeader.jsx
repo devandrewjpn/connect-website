@@ -31,7 +31,7 @@ const DefaulHeader = () => {
           <div className="logo order-lg-0">
             <Link href="#hero" className="d-block">
               <img
-                src={`${process.env.setted_URL}/images/logo/primary-logo.svg`}
+                src={`https://agenciabrasildigital.com.br/projetos/connect/images/logo/primary-logo.svg`}
                 alt="logo"
                 width={100}
                 height={30}

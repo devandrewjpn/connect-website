@@ -7,7 +7,10 @@ import ContactForm from "../../components/home-page/home-1/ContactForm";
 import Feature from "../../components/home-page/home-1/Feature";
 import Hero from "../../components/home-page/home-1/Hero";
 import IntroAbout from "../../components/home-page/home-1/IntroAbout";
+import PromoHero from "../../components/home-page/home-1/PromoHero";
 import WhyChoose from "../../components/home-page/home-1/WhyChoose";
+import Service from "../../components/home-page/home-1/Service";
+import ServiceList from "../../components/home-page/home-1/ServiceList";
 
 const Insurance = () => {
   return (
@@ -15,18 +18,67 @@ const Insurance = () => {
       <Seo pageTitle="Início" />
       <DefaulHeader />
       <Hero />
+      <PromoHero />
+      <div className="fancy-feature-thirtySix mt-190 lg-mt-140">
+        <div className="container">
+          <div className="wrapper position-relative">
+            <div className="row">
+              <div className="col-lg-8">
+                <div
+                  className="title-style-one text-center text-lg-start mb-40 md-mb-20"
+                  data-aos="fade-right"
+                >
+                  <h2 className="main-title fw-500 tx-dark m0">
+                    Por que escolher a connect?
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <Service />
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div id="benefits" className="fancy-feature-thirtyFour mt-50">
+      <div className="fancy-feature-thirtySix mt-190 lg-mt-140">
+        <div className="container">
+          <div className="wrapper position-relative">
+            <div className="row">
+              <div className="col-lg-8">
+                <div
+                  className="title-style-one text-center text-lg-start mb-40 md-mb-20"
+                  data-aos="fade-right"
+                >
+                  <h2 className="main-title fw-500 tx-dark m0">
+                    Com a Connect você tem cobertura em casos de:
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-3">
+                <img src="connect/images/smartphone_connect.png" />
+              </div>
+              <ServiceList />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div id="benefits" className="fancy-feature-thirtyFour mt-50">
         <div className="container">
           <div className="row gx-xxl-5">
             <Feature />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="fancy-feature-thirtyFive mt-90 md-mt-70">
-        <div className="container" data-aos="fade-up">
-          <Banner />
+        <div className="avaliacoes__promo" data-aos="fade-up">
+          <div className="container">
+            <Banner />
+          </div>
         </div>
 
         <div id="about" className="bg-wrapper mt-150 pt-100 lg-mt-80 lg-pt-70">
@@ -62,7 +114,7 @@ const Insurance = () => {
       </div>
 
       <div
-      id="contact"
+        id="contact"
         className="fancy-short-banner-thirteen pt-170 pb-170 mt-130 lg-mt-100 lg-pt-80 lg-pb-80 "
         data-aos="fade-up"
       >
@@ -74,7 +126,7 @@ const Insurance = () => {
                   <div className="col-lg-6 ms-auto order-lg-last">
                     <div className="text-wrapper">
                       <img
-                        src={`${process.env.setted_URL}/images/icon/icon_114.svg`}
+                        src={`https://agenciabrasildigital.com.br/projetos/connect/images/icon/icon_114.svg`}
                         alt="icon"
                         className="lazy-img mb-30"
                       />
@@ -102,12 +154,12 @@ const Insurance = () => {
               formulário
             </div>
             <img
-              src={`${process.env.setted_URL}/images/shape/shape_90.svg`}
+              src={`https://agenciabrasildigital.com.br/projetos/connect/images/shape/shape_90.svg`}
               alt="shape"
               className="lazy-img shapes shape-one"
             />
             <img
-              src={`${process.env.setted_URL}/images/shape/shape_91.svg`}
+              src={`https://agenciabrasildigital.com.br/projetos/connect/images/shape/shape_91.svg`}
               alt="shape"
               className="lazy-img shapes shape-two"
             />
@@ -116,27 +168,29 @@ const Insurance = () => {
         </div>
       </div>
 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.126096424556!2d-43.98649368860356!3d-19.919090437892788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696e19ed18fdf%3A0xc183ead7241dc999!2sR.%20Prof.%20Raphael%20Hardy%2C%2046%20-%20Padre%20Eust%C3%A1quio%2C%20Belo%20Horizonte%20-%20MG%2C%2030730-080!5e0!3m2!1spt-BR!2sbr!4v1704909961104!5m2!1spt-BR!2sbr" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
+
       <div className="footer-style-ten theme-basic-footer zn2 position-relative">
         <div className="container">
           <div className="inner-wrapper">
             <div className="row justify-content-between">
               <Footer />
               <p className="text-white text-center opacity-50 fs-15 m0 d-none d-lg-block">
-                  © {new Date().getFullYear()} - {new Date().getFullYear() + 1}{" "}
-                  Connect Proteção Veícular.
-                </p>
+                © {new Date().getFullYear()} - {new Date().getFullYear() + 1}{" "}
+                Connect Proteção Veícular.
+              </p>
             </div>
           </div>
         </div>
 
         <img
-          src={`${process.env.setted_URL}/images/assets/ils_13.png`}
+          src={`https://agenciabrasildigital.com.br/projetos/connect/images/assets/ils_13.png`}
           alt="illustration"
           className="lazy-img illustration-one"
           data-aos="fade-left"
         />
         <img
-          src={`${process.env.setted_URL}/images/assets/ils_14.png`}
+          src={`https://agenciabrasildigital.com.br/projetos/connect/images/assets/ils_14.png`}
           alt="illustration"
           className="lazy-img illustration-two"
           data-aos="fade-right"
