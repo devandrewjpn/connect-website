@@ -11,9 +11,9 @@ const Hero1 = () => {
             className="col-lg-10 col-md-10 m-auto text-center"
             data-aos="fade-up"
           >
-            <div className="d-flex align-items-baseline gap-1 justify-content-center">
+            <div className="d-flex align-items-baseline gap-2 justify-content-center">
+              <img width={20} src="images/logosusep.svg" alt="" />
               <strong style={{color:'#028134'}}>Autorizado pela SUSEP.</strong>
-              <img width={20} src="connect/images/logosusep.svg" alt="" />
             </div>
             <h1 className="hero-heading fw-500 tx-dark">
               Proteção do<span> seu</span> jeito.

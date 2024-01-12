@@ -11,10 +11,12 @@ import PromoHero from "../../components/home-page/home-1/PromoHero";
 import WhyChoose from "../../components/home-page/home-1/WhyChoose";
 import Service from "../../components/home-page/home-1/Service";
 import ServiceList from "../../components/home-page/home-1/ServiceList";
+import { ToastContainer } from 'react-toastify';
 
 const Insurance = () => {
   return (
     <>
+      <ToastContainer />
       <Seo pageTitle="Início" />
       <DefaulHeader />
       <Hero />
@@ -29,7 +31,7 @@ const Insurance = () => {
                   data-aos="fade-right"
                 >
                   <h2 className="main-title fw-500 tx-dark m0">
-                    Por que escolher a connect?
+                    Por que escolher a Connect?
                   </h2>
                 </div>
               </div>
@@ -58,7 +60,7 @@ const Insurance = () => {
             </div>
             <div className="row">
               <div className="col-lg-3">
-                <img src="connect/images/smartphone_connect.png" />
+                <img src="images/smartphone_connect.png" />
               </div>
               <ServiceList />
             </div>

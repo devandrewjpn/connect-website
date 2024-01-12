@@ -1,21 +1,21 @@
 const accordionItems = [
   {
     id: 1,
-    icon: "/images/icon/icon_108.svg",
+    icon: "projetos/connect/images/icon/icon_108.svg",
     title: "Missão",
     content:
       "Oferecer a melhor forma de proteger seu patrimônio, com qualidade, agilidade e eficiência, garantindo a melhor opção de socorro mútuo, para nossos associados.",
   },
   {
     id: 2,
-    icon: "/images/icon/icon_109.svg",
+    icon: "projetos/connect/images/icon/icon_109.svg",
     title: "Visão",
     content:
       "Ser a principal referência de proteção veicular da região, reconhecida pela sociedade, colaboradores e fornecedores, ofertando sempre os melhores benefícios para os associados.",
   },
   {
     id: 3,
-    icon: "/images/icon/icon_110.svg",
+    icon: "projetos/connect/images/icon/icon_110.svg",
     title: "Valores",
     content:
       "Ética, seriedade, transparência, compromisso, eficiência e respeito aos associados.",

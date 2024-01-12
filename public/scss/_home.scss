@@ -17,7 +17,7 @@
 }
 .card_product_list {
     max-width: 150px;
-    min-height: 200px;
+    min-height: 150px;
 
     display: flex;
     flex-direction: column;
@@ -30,12 +30,13 @@
         background: var(--primary);
         color: var(--secondary);
         border-radius: 30px;
+        font-size: 12px;
 
         padding: 0.5rem 2rem;
     }
 
     h5 {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 .row__flex {

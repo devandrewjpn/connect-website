@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { statesApi } from "../../../lib/axios";
+import { emailAPI, statesApi } from "../../../lib/axios";
+import { toast } from 'react-toastify';
 
 import axios from "axios";
 import { Resend } from 'resend';
@@ -7,9 +8,12 @@ import { Resend } from 'resend';
 
 const ContactForm = () => {
 
-  const resend = new Resend('re_DkF4im7L_8HLqMEWU1sD9GzFHvP7HYQfn');
+  const resend = new Resend('re_4RcTUA9b_2z9zz9NZwY9ZbavXEqhQ7aYh');
   const [states, setStates] = useState([]);
   const [cities, setCities] = useState([]);
+  const [isSending, setIsSending] = useState(false)
+  const [isSendingMessage,setIsSendingMessage] = useState('Enviar mensagem')
+  const [formMessage,setFormMessage] = useState('')
   const [formData, setFormData] = useState({
     Nome: "",
     Email: "",
@@ -40,25 +44,25 @@ const ContactForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if(event.target.tagName === 'SELECT' && event.target.name === 'Estado'){
-      if(event.target.value !== 'none')
-      fetchCities(event.target.value)
+    if (event.target.tagName === 'SELECT' && event.target.name === 'Estado') {
+      if (event.target.value !== 'none')
+        fetchCities(event.target.value)
       setFormData((prevFormData) => ({
         ...prevFormData,
         [name]: value,
       }));
-    } else if(event.target.tagName === 'SELECT' && event.target.name === 'Cidade'){
-      if(event.target.value !== 'none')
+    } else if (event.target.tagName === 'SELECT' && event.target.name === 'Cidade') {
+      if (event.target.value !== 'none')
+        setFormData((prevFormData) => ({
+          ...prevFormData,
+          [name]: value,
+        }));
+    } else if (event.target.tagName === 'SELECT' || event.target.name === 'Meio_de_contato' || event.target.name === 'Horario_para_contato') {
       setFormData((prevFormData) => ({
         ...prevFormData,
         [name]: value,
       }));
-    } else if(event.target.tagName === 'SELECT' || event.target.name === 'Meio_de_contato' || event.target.name === 'Horario_para_contato') {
-      setFormData((prevFormData) => ({
-        ...prevFormData,
-        [name]: value,
-      }));
-    } else if(event.target.tagName === 'INPUT') {
+    } else if (event.target.tagName === 'INPUT') {
       setFormData((prevFormData) => ({
         ...prevFormData,
         [name]: value,
@@ -66,19 +70,26 @@ const ContactForm = () => {
     }
   };
 
-  const testResend = () => {
-    resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'yuutoandrew.jpn@gmail.com',
-      subject: 'Hello World',
-      html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
-    });
+  const sendEmail = async (formFields) => {
+    const headers = new Headers()
+    headers.append("Content-Type", "application/json")
+
+    const response = await fetch('https://agenciabrasildigital.com.br/projetos/apis/connect/public/Api/sendEmail', {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify(formData)
+    })
+    const data = await response;
+    setFormMessage('Mensagem enviada com sucesso!')
+    setIsSendingMessage('Enviar mensagem')
+    setIsSending(false)
   }
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log(formData)
-    // testResend()
+    setIsSending(true)
+    setIsSendingMessage('Enviando..')
+    sendEmail(formData)
   };
 
   return (
@@ -158,9 +169,9 @@ const ContactForm = () => {
         <div className="col-12">
           <div className="input-group-meta form-group mb-15">
             <select name="Meio_de_contato" id="" onChange={handleChange} required>
-              <option value="">Selecione um meio de contato</option>  
-              <option value="Ligação">Ligação</option>  
-              <option value="WhatsApp">WhatsApp</option>  
+              <option value="">Selecione um meio de contato</option>
+              <option value="Ligação">Ligação</option>
+              <option value="WhatsApp">WhatsApp</option>
             </select>
             <div className="help-block with-errors" />
           </div>
@@ -170,9 +181,9 @@ const ContactForm = () => {
           <div className="input-group-meta form-group mb-15">
             <select name="Horario_para_contato" id="" onChange={handleChange} required>
               <option value="">Selecione um horário para contato</option>
-              <option value="Manhã">Manhã</option>  
-              <option value="Tarde">Tarde</option>  
-              <option value="Noite">Noite</option>  
+              <option value="Manhã">Manhã</option>
+              <option value="Tarde">Tarde</option>
+              <option value="Noite">Noite</option>
             </select>
             <div className="help-block with-errors" />
           </div>
@@ -223,10 +234,12 @@ const ContactForm = () => {
         <div className="col-12">
           <button
             type="submit"
+            disabled={isSending}
             className="btn-twentyTwo w-100 fw-500 tran3s text-uppercase"
           >
-            Enviar mensagem
+            {isSendingMessage}
           </button>
+          <span className="d-block mt-3" style={{transition: '1s'}}>{formMessage}</span>
         </div>
       </div>
 

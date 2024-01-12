@@ -930,6 +930,10 @@ body .btn-twentyTwo {
 body .btn-twentyTwo:hover {
   background: #000;
 }
+body .btn-twentyTwo:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 body .btn-twentyThree {
   width: 122px;
   height: 122px;
