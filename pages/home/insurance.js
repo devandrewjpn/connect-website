@@ -45,7 +45,7 @@ const Insurance = () => {
         </div>
       </div>
 
-      <div className="fancy-feature-thirtySix mt-190 lg-mt-140">
+      <div id="benefits" className="fancy-feature-thirtySix mt-190 lg-mt-140">
         <div className="container">
           <div className="wrapper position-relative">
             <div className="row">
