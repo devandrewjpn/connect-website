@@ -50,6 +50,13 @@ const MainMenu = () => {
             </Link>
           </li>
 
+          <li
+            className="nav-item"
+          >
+            <Link href="#" role="button" className="nav-link">
+              Área do licenciado
+            </Link>
+          </li>
 
         </ul>
 

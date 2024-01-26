@@ -22,7 +22,7 @@ const DefaulHeader = () => {
 
   return (
     <header
-      className={`theme-main-menu sticky-menu theme-menu-eight border-bottom ${
+      className={`theme-main-menu sticky-menu theme-menu-eight ${
         navbar ? "fixed" : ""
       }`}
     >
@@ -31,10 +31,9 @@ const DefaulHeader = () => {
           <div className="logo order-lg-0">
             <Link href="#hero" className="d-block">
               <img
-                src={`https://agenciabrasildigital.com.br/projetos/connect/images/logo/primary-logo.svg`}
+                src={`/projetos/connect/images/logo/${navbar ? 'primary-logo' : 'dark-white-logo'}.svg`}
                 alt="logo"
-                width={100}
-                height={30}
+                width={150}
               />
             </Link>
           </div>

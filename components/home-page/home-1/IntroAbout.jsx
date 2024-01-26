@@ -13,13 +13,7 @@ const IntroAbout = () => {
     },
     {
       id: 2,
-      title: "5+",
-      cardNo: "card-two",
-      subtitle: "Filiais",
-    },
-    {
-      id: 3,
-      title: "100+",
+      title: "+15 Milhões",
       cardNo: "card-three",
       subtitle: "Veículos indenizados",
     },
@@ -39,9 +33,7 @@ const IntroAbout = () => {
         <div className="col-xl-5 col-md-6 order-md-last">
           <div className="text-wrapper md-pb-70">
             <p className="tx-dark pt-30 pb-30 md-pb-15" data-aos="fade-up">
-              Uma associação, perante o direito brasileiro, é uma organização
-              <span className="fw-500"> sem fins lucrativos </span>
-              onde pessoas se unem para chegar juntas a um propósito, de conquistas e benefícios para todos.
+              "Faça parte de um grupo seleto de associados que se unem para chegar juntos à um propósito de proteger seu patrimônio <span className="fw-500">sem fins lucrativos</span>."
             </p>
           </div>
           {/* /.text-wrapper */}

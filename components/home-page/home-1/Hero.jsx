@@ -11,19 +11,19 @@ const Hero1 = () => {
             className="col-lg-10 col-md-10 m-auto text-center"
             data-aos="fade-up"
           >
-            <div className="d-flex align-items-baseline gap-2 justify-content-center">
-              <img width={20} src="images/logosusep.svg" alt="" />
+            {/* <div className="d-flex align-items-baseline gap-2 justify-content-center">
+              <img width={20} src="/projetos/connect/images/logosusep.svg" alt="" />
               <strong style={{color:'#028134'}}>Autorizado pela SUSEP.</strong>
-            </div>
+            </div> */}
             <h1 className="hero-heading fw-500 tx-dark">
-              Proteção do<span> seu</span> jeito.
+              Proteção do<span className="tx-white"> seu</span> jeito.
             </h1>
             <p className="text-lg tx-dark mt-45 mb-50 lg-mt-30 lg-mb-40">
               Segurança e credibilidade para o seu bem.
             </p>
             <a className="main_hero_button" href="">Fazer simulação 👉</a>
             <div>
-              <div className="approval-info d-inline-flex align-items-center mt-130 lg-mt-80"></div>
+              <div className="approval-info d-inline-flex align-items-center mt-5 lg-mt-80"></div>
             </div>
           </div>
         </div>

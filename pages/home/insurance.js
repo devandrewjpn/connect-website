@@ -33,6 +33,8 @@ const Insurance = () => {
                   <h2 className="main-title fw-500 tx-dark m0">
                     Por que escolher a Connect?
                   </h2>
+                  <p>Somos a maior
+                    startup associativa do Brasil</p>
                 </div>
               </div>
             </div>
@@ -59,8 +61,8 @@ const Insurance = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-lg-3">
-                <img src="images/smartphone_connect.png" />
+              <div className="col-lg-6">
+                <img src="/projetos/connect/images/smartphone_connect2.png" />
               </div>
               <ServiceList />
             </div>
@@ -77,7 +79,8 @@ const Insurance = () => {
       </div> */}
 
       <div className="fancy-feature-thirtyFive mt-90 md-mt-70">
-        <div className="avaliacoes__promo" data-aos="fade-up">
+        <div className="avaliacoes__promo position-relative" data-aos="fade-up">
+          <div className="reclame__aqui"><img src="/projetos/connect/images/reclame_aqui.png" alt="" /></div>
           <div className="container">
             <Banner />
           </div>
@@ -93,23 +96,12 @@ const Insurance = () => {
       <div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
         <div className="container">
           <div className="row">
-            <div
-              className="col-lg-6 ms-auto order-lg-last"
-              data-aos="fade-left"
-            >
-              <div className="ps-lg-5 ms-xxl-3">
-                <div className="title-style-one mb-40">
-                  <div className="sc-title text-uppercase">Por que nos escolher</div>
-                  <h2 className="main-title fw-500 tx-dark m0">
-                    Uma associação de princípios.
-                  </h2>
-                </div>
-                <WhyChoose />
-              </div>
-            </div>
-
-            <div className="col-xxl-5 col-lg-6 order-lg-first">
-              <Block />
+            <div className="title-style-one mb-40">
+              <div className="sc-title text-uppercase">Clube de benefícios</div>
+              <h2 className="main-title fw-500 tx-dark mb-5">
+                Clube Connect
+              </h2>
+              <img src="/projetos/connect/images/clube_connect.webp" />
             </div>
           </div>
         </div>
@@ -170,7 +162,7 @@ const Insurance = () => {
         </div>
       </div>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.126096424556!2d-43.98649368860356!3d-19.919090437892788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696e19ed18fdf%3A0xc183ead7241dc999!2sR.%20Prof.%20Raphael%20Hardy%2C%2046%20-%20Padre%20Eust%C3%A1quio%2C%20Belo%20Horizonte%20-%20MG%2C%2030730-080!5e0!3m2!1spt-BR!2sbr!4v1704909961104!5m2!1spt-BR!2sbr" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
+      {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.126096424556!2d-43.98649368860356!3d-19.919090437892788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696e19ed18fdf%3A0xc183ead7241dc999!2sR.%20Prof.%20Raphael%20Hardy%2C%2046%20-%20Padre%20Eust%C3%A1quio%2C%20Belo%20Horizonte%20-%20MG%2C%2030730-080!5e0!3m2!1spt-BR!2sbr!4v1704909961104!5m2!1spt-BR!2sbr" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" /> */}
 
       <div className="footer-style-ten theme-basic-footer zn2 position-relative">
         <div className="container">
