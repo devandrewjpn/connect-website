@@ -55,6 +55,18 @@ const services = [
         title: "Incêndio",
         id: 8,
     },
+    {
+        icon: "/projetos/connect/images/icon/energia.svg",
+        delayAnim: 800,
+        title: "Energia Renovável",
+        id: 9,
+    },
+    {
+        icon: "/projetos/connect/images/icon/telemedicina.svg",
+        delayAnim: 800,
+        title: "Telemedicina",
+        id: 10,
+    },
 ];
 
 const ServiceList = () => {

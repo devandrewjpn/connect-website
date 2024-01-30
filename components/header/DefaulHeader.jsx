@@ -22,16 +22,14 @@ const DefaulHeader = () => {
 
   return (
     <header
-      className={`theme-main-menu sticky-menu theme-menu-eight ${
-        navbar ? "fixed" : ""
-      }`}
+      className={`theme-main-menu sticky-menu theme-menu-eight fixed`}
     >
       <div className="inner-content position-relative">
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-0">
             <Link href="#hero" className="d-block">
               <img
-                src={`/projetos/connect/images/logo/${navbar ? 'primary-logo' : 'dark-white-logo'}.svg`}
+                src={`/projetos/connect/images/logo/primary-logo.svg`}
                 alt="logo"
                 width={150}
               />

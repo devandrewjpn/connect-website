@@ -13,7 +13,7 @@ import Service from "../../components/home-page/home-1/Service";
 import ServiceList from "../../components/home-page/home-1/ServiceList";
 import { ToastContainer } from 'react-toastify';
 
-const Insurance = () => {
+const Home = () => {
   return (
     <>
       <ToastContainer />
@@ -194,4 +194,4 @@ const Insurance = () => {
   );
 };
 
-export default Insurance;
+export default Home;

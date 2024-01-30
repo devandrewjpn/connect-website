@@ -15,7 +15,7 @@ const IntroAbout = () => {
       id: 2,
       title: "+15 Milhões",
       cardNo: "card-three",
-      subtitle: "Veículos indenizados",
+      subtitle: "Indenizados",
     },
   ];
 
