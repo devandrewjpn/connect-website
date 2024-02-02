@@ -37,7 +37,7 @@ const DefaulHeader = () => {
           </div>
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
             <Link
-              href="https://kepler.hinova.com.br/sga/area/hinova/v2/home/home.php"
+              href="https://kepler.hinova.com.br/sga/area/v5/auth/d88e237e387258c69e3134d6be53036ced9c767f923c0318eb62e1ca87ada2e4adf54de899a7c0643a8efd2710f71a6a42e99cba6f3635808e69f917c57ed55831bf77aa6b04def9a222268f4560bdac"
               target="_blank"
               className="login-btn-three rounded-circle tran3s me-3"
             >
