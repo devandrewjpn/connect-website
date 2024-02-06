@@ -61,9 +61,9 @@ const Home = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-lg-6">
+              {/* <div className="col-lg-6">
                 <img src="/projetos/connect/images/smartphone_connect2.png" />
-              </div>
+              </div> */}
               <ServiceList />
             </div>
           </div>

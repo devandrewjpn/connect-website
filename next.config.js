@@ -10,6 +10,7 @@ module.exports = {
       ignoreBuildErrors: true,
     },
     assetPrefix: 'https://agenciabrasildigital.com.br/projetos/connect',
+    // assetPrefix: 'http://localhost:3000/projetos/connect',
     images: {
       unoptimized: true,
       remotePatterns: [
