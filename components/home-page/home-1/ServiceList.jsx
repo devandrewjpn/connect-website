@@ -61,7 +61,7 @@ const services = [
         icon: "/projetos/connect/images/icon/energia.svg",
         delayAnim: 800,
         title: "Energia Renovável",
-        description: "",
+        description: "Economize até 15% na sua conta de energia elétrica sem nenhum investimento. Energia solar limpa e mais barata.",
         id: 8,
     },
     {
