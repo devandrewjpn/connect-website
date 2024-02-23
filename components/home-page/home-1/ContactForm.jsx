@@ -12,8 +12,8 @@ const ContactForm = () => {
   const [states, setStates] = useState([]);
   const [cities, setCities] = useState([]);
   const [isSending, setIsSending] = useState(false)
-  const [isSendingMessage,setIsSendingMessage] = useState('Enviar mensagem')
-  const [formMessage,setFormMessage] = useState('')
+  const [isSendingMessage, setIsSendingMessage] = useState('Enviar mensagem')
+  const [formMessage, setFormMessage] = useState('')
   const [formData, setFormData] = useState({
     Nome: "",
     Email: "",
@@ -74,10 +74,56 @@ const ContactForm = () => {
     const headers = new Headers()
     headers.append("Content-Type", "application/json")
 
-    const response = await fetch('https://agenciabrasildigital.com.br/projetos/apis/connect/public/Api/sendEmail', {
+    const response = await fetch('https://apiemail.devandrew.com.br/sendEmail', {
       method: 'POST',
       headers: headers,
-      body: JSON.stringify(formData)
+      body: JSON.stringify({
+        "destinatario": "vendas1@connectprotecaointeligente.com.br",
+        "assunto": "Formulário do site Connect Proteção",
+        "titulo": "Dados preenchidos:",
+        "campos": [
+          {
+            "key": "Nome",
+            "value": formData.Nome
+          },
+          {
+            "key": "Email",
+            "value": formData.Email
+          },
+          {
+            "key": "Telefone",
+            "value": formData.Telefone
+          },
+          {
+            "key": "Estado",
+            "value": formData.Estado
+          },
+          {
+            "key": "Cidade",
+            "value": formData.Cidade
+          },
+          {
+            "key": "Meio de contato",
+            "value": formData.Meio_de_contato
+          },
+          {
+            "key": "Horário para contato",
+            "value": formData.Horario_para_contato
+          },
+          {
+            "key": "Marca do veículo",
+            "value": formData.Marca_do_veiculo
+          },
+          {
+            "key": "Modelo do véiculo",
+            "value": formData.Modelo_do_veiculo
+          },
+          {
+            "key": "Ano do veículo",
+            "value": formData.Ano_do_veiculo
+          },
+        ]
+      })
     })
     const data = await response;
     setFormMessage('Mensagem enviada com sucesso!')
@@ -239,7 +285,7 @@ const ContactForm = () => {
           >
             {isSendingMessage}
           </button>
-          <span className="d-block mt-3" style={{transition: '1s'}}>{formMessage}</span>
+          <span className="d-block mt-3" style={{ transition: '1s' }}>{formMessage}</span>
         </div>
       </div>
 

@@ -29,7 +29,7 @@ const DefaulHeader = () => {
           <div className="logo order-lg-0">
             <Link href="#hero" className="d-block">
               <img
-                src={`/projetos/connect/images/logo/primary-logo.svg`}
+                src={`/images/logo/primary-logo.svg`}
                 alt="logo"
                 width={150}
               />

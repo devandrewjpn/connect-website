@@ -68,7 +68,7 @@ const Banner = () => {
   return (
     <>
       <div className="top-banner text-center position-relative">
-        <img className="mx-auto" width={80} src="/projetos/connect/images/icon/google_negocio.png" alt="" />
+        <img className="mx-auto" width={80} src="/images/icon/google_negocio.png" alt="" />
         <h2 className="tx-dark mb-20">Melhores avaliações do mercado</h2>
         <Slider {...settings}>
           {testimonials.map(testimonial => {

@@ -10,7 +10,7 @@ const Feature = () => {
         </>
       ),
       description: "Todas as proteções que precisa.",
-      icon: "https://agenciabrasildigital.com.br/projetos/connect/images/icon/icon_car.svg",
+      icon: "/images/icon/icon_car.svg",
       width: "120",
       height: "165",
       delay: "100",
@@ -25,7 +25,7 @@ const Feature = () => {
       width: "120",
       height: "170",
       description: "Rastreamento total do seu bem.",
-      icon: "https://agenciabrasildigital.com.br/projetos/connect/images/icon/icon_location.svg",
+      icon: "/images/icon/icon_location.svg",
       delay: "200",
     },
     {
@@ -38,7 +38,7 @@ const Feature = () => {
       width: "120",
       height: "169",
       description: "Assistências escolhidas para o seu conforto.",
-      icon: "https://agenciabrasildigital.com.br/projetos/connect/images/icon/icon_tools.svg",
+      icon: "/images/icon/icon_tools.svg",
       delay: "300",
     },
   ];

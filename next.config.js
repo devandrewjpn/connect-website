@@ -5,20 +5,20 @@ module.exports = {
       ignoreDuringBuilds: true,
     },
     output: 'export',
-    basePath: '/projetos/connect',
+    basePath: '',
     typescript: {
       ignoreBuildErrors: true,
     },
-    assetPrefix: 'https://agenciabrasildigital.com.br/projetos/connect',
-    // assetPrefix: 'http://localhost:3000/projetos/connect',
+    assetPrefix: 'https://connectprotecaointeligente.com.br/',
+    // assetPrefix: 'http://localhost:3000/',
     images: {
       unoptimized: true,
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'agenciabrasildigital.com.br/',
+          hostname: 'connectprotecaointeligente.com.br',
           port: '',
-          pathname: '/projetos/connect/**',
+          pathname: '/**',
         },
       ],
     }

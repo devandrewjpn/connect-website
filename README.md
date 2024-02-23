@@ -13,7 +13,7 @@
   <p align="center">
     An full website build with NextJS
     <br />
-    <a href="https://agenciabrasildigital.com.br/projetos/connect/">View Demo</a>
+    <a href="https://agenciabrasildigital.com.br/">View Demo</a>
     ·
     <a href="mailto:yuutoandrew.jpn@gmail.com">Report Bug</a>
   </p>

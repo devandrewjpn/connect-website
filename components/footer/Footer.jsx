@@ -17,7 +17,7 @@ const Footer = () => {
     <>
 
       <div className="col-12 text-center d-flex flex-column justify-content-center align-items-center mb-30">
-        <img width={250} src={`https://agenciabrasildigital.com.br/projetos/connect/images/logo/white-logo.svg`} alt="" />
+        <img width={250} src={`/images/logo/white-logo.svg`} alt="" />
         <p className="text-white opacity-75 mb-5 mt-30">Raphael Hardy, 46, P. Eustáquio, BH/MG</p>
         <p className="text-white opacity-75 mb-5">31 - 3271-1073</p>
         <p className="text-white opacity-75 mb-10">contato@connect.org.br</p>

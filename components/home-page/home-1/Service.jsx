@@ -3,25 +3,25 @@ import Link from "next/link";
 
 const services = [
   {
-    icon: "/projetos/connect/images/icon/icon_hand.svg",
+    icon: "/images/icon/icon_hand.svg",
     title: "Descomplicado",
     description: "Economia de até 30% em comparação com os valores do mercado. Faça uma simulação pelo celular e esteja protegido em poucos minutos.",
     delayAnim: 0,
   },
   {
-    icon: "/projetos/connect/images/icon/precisa.svg",
+    icon: "/images/icon/precisa.svg",
     title: "Coberturas que você precisa",
     description: "Personalize todas as assistências que você irá necessitar e com condições que cabem no seu bolso. Adicione ou remova serviços de acordo com necessidade.",
     delayAnim: 100,
   },
   {
-    icon: "/projetos/connect/images/icon/pagamento_facilitado.svg",
+    icon: "/images/icon/pagamento_facilitado.svg",
     title: "Pagamento Facilitado",
     description: "Você receberá um boleto mensalmente para manter sua cota ativa e manter seu veículo protegido.",
     delayAnim: 200,
   },
   {
-    icon: "/projetos/connect/images/icon/burocracia.svg",
+    icon: "/images/icon/burocracia.svg",
     title: "100% digital sem burocracia",
     description: "Tudo é feito no digital: contrato, atendimento, solicitação de assistência e etc.",
     delayAnim: 300,
@@ -45,7 +45,7 @@ const Service = () => {
             <h4 className="tx-dark">{service.title}</h4>
             <p className="fs-10 m0 pt-20">{service.description}</p>
             <Link
-              href="/pages-menu/service-details"
+              href=""
               className="read-more rounded-circle text-start tran3s"
             >
               <i className="bi bi-arrow-right" />

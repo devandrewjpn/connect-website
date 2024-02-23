@@ -62,7 +62,7 @@ const Home = () => {
             </div>
             <div className="row">
               {/* <div className="col-lg-6">
-                <img src="/projetos/connect/images/smartphone_connect2.png" />
+                <img src="/images/smartphone_connect2.png" />
               </div> */}
               <ServiceList />
             </div>
@@ -80,7 +80,7 @@ const Home = () => {
 
       <div className="fancy-feature-thirtyFive mt-90 md-mt-70">
         <div className="avaliacoes__promo position-relative" data-aos="fade-up">
-          <div className="reclame__aqui"><img src="/projetos/connect/images/reclame_aqui.png" alt="" /></div>
+          <div className="reclame__aqui"><img src="/images/reclame_aqui.png" alt="" /></div>
           <div className="container">
             <Banner />
           </div>
@@ -101,7 +101,7 @@ const Home = () => {
               <h2 className="main-title fw-500 tx-dark mb-5">
                 Clube Connect
               </h2>
-              <img src="/projetos/connect/images/clube_connect.webp" />
+              <img src="/images/clube_connect.webp" />
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@ const Home = () => {
                   <div className="col-lg-6 ms-auto order-lg-last">
                     <div className="text-wrapper">
                       <img
-                        src={`https://agenciabrasildigital.com.br/projetos/connect/images/icon/icon_114.svg`}
+                        src={`/images/icon/icon_114.svg`}
                         alt="icon"
                         className="lazy-img mb-30"
                       />
@@ -148,12 +148,12 @@ const Home = () => {
               formulário
             </div>
             <img
-              src={`https://agenciabrasildigital.com.br/projetos/connect/images/shape/shape_90.svg`}
+              src={`/images/shape/shape_90.svg`}
               alt="shape"
               className="lazy-img shapes shape-one"
             />
             <img
-              src={`https://agenciabrasildigital.com.br/projetos/connect/images/shape/shape_91.svg`}
+              src={`/images/shape/shape_91.svg`}
               alt="shape"
               className="lazy-img shapes shape-two"
             />
@@ -178,13 +178,13 @@ const Home = () => {
         </div>
 
         <img
-          src={`https://agenciabrasildigital.com.br/projetos/connect/images/assets/ils_13.png`}
+          src={`/images/assets/ils_13.png`}
           alt="illustration"
           className="lazy-img illustration-one"
           data-aos="fade-left"
         />
         <img
-          src={`https://agenciabrasildigital.com.br/projetos/connect/images/assets/ils_14.png`}
+          src={`/images/assets/ils_14.png`}
           alt="illustration"
           className="lazy-img illustration-two"
           data-aos="fade-right"

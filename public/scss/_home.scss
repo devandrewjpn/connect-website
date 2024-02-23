@@ -16,8 +16,6 @@
     }
 }
 .card_product_list {
-    // max-width: 150px;
-    // min-height: 150px;
 
     display: flex;
     flex-direction: column;
@@ -25,6 +23,18 @@
     // justify-content: space-between;
 
     text-align: center;
+
+    .card_product_head {
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    img {
+        max-height: 80px;
+        object-fit: cover;
+    }
 
     a {
         background: var(--primary);

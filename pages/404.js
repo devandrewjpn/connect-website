@@ -22,7 +22,7 @@ const Pricing = () => {
           <img
             width={800}
             height={522}
-            src={`https://agenciabrasildigital.com.br/projetos/connect/images/assets/ils_06.svg`}
+            src={`/images/assets/ils_06.svg`}
             alt=""
             className="m-auto"
           />
@@ -32,7 +32,7 @@ const Pricing = () => {
         <img
           width={1915}
           height={674}
-          src={`https://agenciabrasildigital.com.br/projetos/connect/images/shape/shape_178.svg`}
+          src={`/images/shape/shape_178.svg`}
           alt="shape"
           className="shapes shape-one w-100"
         />

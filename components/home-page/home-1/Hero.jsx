@@ -12,7 +12,7 @@ const Hero1 = () => {
             data-aos="fade-up"
           >
             {/* <div className="d-flex align-items-baseline gap-2 justify-content-center">
-              <img width={20} src="/projetos/connect/images/logosusep.svg" alt="" />
+              <img width={20} src="/images/logosusep.svg" alt="" />
               <strong style={{color:'#028134'}}>Autorizado pela SUSEP.</strong>
             </div> */}
             <h1 className="hero-heading fw-500 tx-dark">
@@ -21,7 +21,7 @@ const Hero1 = () => {
             <p className="text-lg tx-dark mt-45 mb-50 lg-mt-30 lg-mb-40">
               Segurança e credibilidade para o seu bem.
             </p>
-            <a className="main_hero_button" href="">Fazer simulação 👉</a>
+            <a className="main_hero_button" href="https://connectprotecaointeligente.com.br/cotacao/" target="_blank">Fazer simulação 👉</a>
             <div>
               <div className="approval-info d-inline-flex align-items-center mt-5 lg-mt-80"></div>
             </div>
@@ -34,7 +34,7 @@ const Hero1 = () => {
         width={487}
         height={649}
         id="heroleftimg"
-        src={`https://agenciabrasildigital.com.br/projetos/connect/images/assets/ils_11.png`}
+        src={`/images/assets/ils_11.png`}
         alt="ilustration"
         className="lazy-img illustration-one"
         data-aos="fade-left"
@@ -43,7 +43,7 @@ const Hero1 = () => {
         width={537}
         height={658}
         id="herorightimg"
-        src={`https://agenciabrasildigital.com.br/projetos/connect/images/assets/ils_12.png`}
+        src={`/images/assets/ils_12.png`}
         alt="ilustration"
         className="lazy-img illustration-two"
         data-aos="fade-right"
