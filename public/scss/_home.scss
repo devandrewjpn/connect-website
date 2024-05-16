@@ -1,3 +1,72 @@
+#feedback_comments {
+    @media (max-width: 800px) {
+        display: none;
+    }
+}
+.testimonials_video {
+    position: relative;
+    min-height: 600px;
+
+    .media_buttons {
+        position: absolute;
+        bottom: 66px;
+        margin-top: -20px;
+        left: 50%;
+        margin-left: -20px;
+
+        @media (max-width:1400px) {
+            bottom: 150px;
+        }
+
+        button {
+            background: white;
+            border-radius: 4px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        width: 92%;
+        height: 550px!important;
+        border-radius: 42px;
+
+        @media (max-width:1400px) {
+            height: 475px!important;
+            width: 98%!important;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media (max-width: 850px) {
+        min-height: 900px;
+    }
+}
+.testimonials_video_row {
+    @media (max-width: 850px) {
+        .col-md-3 {
+            display: none;
+        }
+        .col-md-3:first-child {
+            display: block;
+        }
+    }
+}
 .promo__hero {
     background: var(--secondary);
     padding: 4rem 0;

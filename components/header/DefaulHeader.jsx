@@ -27,7 +27,7 @@ const DefaulHeader = () => {
       <div className="inner-content position-relative">
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-0">
-            <Link href="#hero" className="d-block">
+            <Link href="/" className="d-block">
               <img
                 src={`/images/logo/primary-logo.svg`}
                 alt="logo"
@@ -39,9 +39,10 @@ const DefaulHeader = () => {
             <Link
               href="https://kepler.hinova.com.br/sga/area/v5/auth/d88e237e387258c69e3134d6be53036ced9c767f923c0318eb62e1ca87ada2e4adf54de899a7c0643a8efd2710f71a6a42e99cba6f3635808e69f917c57ed55831bf77aa6b04def9a222268f4560bdac"
               target="_blank"
-              className="login-btn-three rounded-circle tran3s me-3"
+              className="login-btn-three tran3s me-3"
             >
-              <i className="bi bi-person" />
+              {/* <i className="bi bi-person" /> */}
+              <b>Área do Associado</b>
             </Link>
             <Link
               href="#contact"

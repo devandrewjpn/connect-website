@@ -29,15 +29,15 @@ const MainMenu = () => {
           <li
             className="nav-item"
           >
-            <a href="#hero" role="button" className="nav-link">
+            <Link href="/" role="button" className="nav-link">
               Início
-            </a>
+            </Link>
           </li>
 
           <li
             className="nav-item"
           >
-            <Link href="#benefits" role="button" className="nav-link">
+            <Link href="/#benefits" role="button" className="nav-link">
               Benefícios
             </Link>
           </li>
@@ -45,7 +45,7 @@ const MainMenu = () => {
           <li
             className="nav-item"
           >
-            <Link href="#about" role="button" className="nav-link">
+            <Link href="/#about" role="button" className="nav-link">
               Sobre
             </Link>
           </li>
@@ -53,7 +53,7 @@ const MainMenu = () => {
           <li
             className="nav-item"
           >
-            <Link href="#" role="button" className="nav-link">
+            <Link href="/licenciado" role="button" className="nav-link">
               Área do licenciado
             </Link>
           </li>

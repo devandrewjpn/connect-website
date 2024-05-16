@@ -11,6 +11,124 @@
   background: #000;
   border-radius: 0;
 }
+.navbar .navbar-nav .nav-link {
+  margin: 0 16px!important;
+}
+.gallery_wrapp {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+}
+
+@media (max-width:1200px) {
+  .gallery_wrapp {
+    grid-template-columns: 1fr;
+  }
+  .row__flex {
+    grid-template-columns: 1fr!important;
+  }
+}
+
+.gallery_item_image_box {
+  padding: 10px;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 500px;
+  position: relative;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  a {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -25px;
+
+    z-index: 2;
+    background: #fff;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 1s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.gallery_item_box {
+  padding: 10px;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 500px;
+  position: relative;
+
+  .video_item_volume_indicator {
+    position: absolute;
+    width: 10px;
+    top: 30px;
+    color: white;
+    right: 50px;
+    font-weight: 700;
+  }
+
+  .video_item_media_buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: -54px;
+
+    button {
+      z-index: 2;
+      background: #fff;
+      border-radius: 8px;
+      width: 50px;
+      height: 50px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transition: 1s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    a {
+
+      background: #fff;
+      border-radius: 8px;
+      width: 50px;
+      height: 50px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      transition: 1s;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
 :root {
   --primary: #04E63D;
   --secondary: #050A30;
@@ -1163,13 +1281,20 @@ body .btn-twentyFive:hover {
   color: #000;
 }
 .theme-main-menu .login-btn-three {
-  width: 55px;
-  height: 55px;
+  font-size: 14px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border-radius: 50px !important;
+  padding: 0 1.3rem;
+  height: 50px;
   border: 1px solid var(--heading);
   text-align: center;
   line-height: 53px;
   color: var(--heading);
-  font-size: 25px;
+  i {
+    font-size: 20px;
+  }
 }
 .theme-main-menu.white-vr .login-btn-three {
   background: #fff;

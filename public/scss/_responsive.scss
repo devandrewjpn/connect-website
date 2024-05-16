@@ -1,13 +1,3 @@
-/* Responsive CSS Document */
-
-/* 
-    Created on   : 27/07/2022.
-    Theme Name   : Jano - Creative Multipurpose Bootstrap 5 Template
-    Version      : 1.0.
-    Developed by : (me@heloshape.com) / (www.me.heloshape.com)
-   
-*/
-
 @media (min-width: 992px) {
   .container {padding-right: 0;padding-left: 0;}
 }
@@ -577,7 +567,7 @@
   body .btn-twentyFive {line-height: 46px; font-size: 16px; padding: 0 22px;}
   body .btn-three {line-height: 48px; padding: 0 35px;}
   .theme-main-menu {padding-right: 12px; padding-left: 12px;}
-  .theme-main-menu .login-btn-three {max-width: 45px; height: 45px; line-height: 43px;}
+  .theme-main-menu .login-btn-three {height: 45px; line-height: 43px;}
   .hero-banner-ten .hero-heading {font-size: 45px;}
   .hero-banner-ten {padding-top: 150px;}
   .fancy-feature-thirtyFive .top-banner h2 {font-size: 35px;}

@@ -12,8 +12,34 @@ import WhyChoose from "../../components/home-page/home-1/WhyChoose";
 import Service from "../../components/home-page/home-1/Service";
 import ServiceList from "../../components/home-page/home-1/ServiceList";
 import { ToastContainer } from 'react-toastify';
+import { HomeVideoFeedback } from "../../components/home_video_feedback";
+import { GalleryItemVideo } from "../../components/gallery_item_video";
 
 const Home = () => {
+
+  const items = [
+    {
+      id: 1,
+      type: 'video',
+      link: '/gallery/alex.mp4'
+    },
+    {
+      id: 2,
+      type: 'video',
+      link: '/gallery/jose.mp4'
+    },
+    {
+      id: 3,
+      type: 'image',
+      link: '/gallery/mathias.mp4'
+    },
+    {
+      id: 4,
+      type: 'image',
+      link: '/gallery/walmir.mp4'
+    },
+  ]
+
   return (
     <>
       <ToastContainer />
@@ -61,22 +87,11 @@ const Home = () => {
               </div>
             </div>
             <div className="row">
-              {/* <div className="col-lg-6">
-                <img src="/images/smartphone_connect2.png" />
-              </div> */}
               <ServiceList />
             </div>
           </div>
         </div>
       </div>
-
-      {/* <div id="benefits" className="fancy-feature-thirtyFour mt-50">
-        <div className="container">
-          <div className="row gx-xxl-5">
-            <Feature />
-          </div>
-        </div>
-      </div> */}
 
       <div className="fancy-feature-thirtyFive mt-90 md-mt-70">
         <div className="avaliacoes__promo position-relative" data-aos="fade-up">
@@ -86,12 +101,29 @@ const Home = () => {
           </div>
         </div>
 
+
+        <div id="feedback_comments" className="fancy-feature-thirtySeven mt-225 lg-mt-120">
+          <div className="container">
+            <div className="row">
+              <div className="title-style-one mb-40">
+                <div className="sc-title text-uppercase">Quem é Connect, está protegido.</div>
+                <h2 className="main-title fw-500 tx-dark mb-5">
+                  O que nossos associados dizem sobre nós
+                </h2>
+                <HomeVideoFeedback />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div id="about" className="bg-wrapper mt-150 pt-100 lg-mt-80 lg-pt-70">
           <div className="container">
             <IntroAbout />
           </div>
         </div>
       </div>
+
+
 
       <div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
         <div className="container">
