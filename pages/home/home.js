@@ -14,6 +14,7 @@ import ServiceList from "../../components/home-page/home-1/ServiceList";
 import { ToastContainer } from 'react-toastify';
 import { HomeVideoFeedback } from "../../components/home_video_feedback";
 import { GalleryItemVideo } from "../../components/gallery_item_video";
+import SmartphoneFeedback from "../../components/home-page/home-1/SmartphoneFeedback";
 
 const Home = () => {
 
@@ -114,6 +115,10 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="smartphonefeedbackbox container" style={{paddingTop: "6rem"}}>
+          <SmartphoneFeedback />
         </div>
 
         <div id="about" className="bg-wrapper mt-150 pt-100 lg-mt-80 lg-pt-70">
